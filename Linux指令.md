@@ -408,3 +408,13 @@ gpasswd命令是Linux下工作组文件/etc/group和/etc/gshadow的管理工具 
 -R	限制用户登入组，只有组中的成员才可以用newgrp加入该组
 ```
 
+###### userdel
+userdel命令来自于英文词组“user delete”的缩写，其功能是删除用户账户。Linux系统中一切都是文件，用户信息被保存到了/etc/passwd、/etc/shadow以及/etc/group文件中，因此使用userdel命令实际就是帮助我们删除了指定用户在上述三个文件中的对应信息。
+
+语法格式：userdel [参数] 用户名
+```
+-f	强制删除用户账号
+-r	删除用户主目录及其中的任何文件
+-h	显示命令的帮助信息
+
+```
